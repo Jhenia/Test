@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Test</title>
+	 <link rel="stylesheet" href="css/main.css" />  
+	 <link href="http://fonts.cdnfonts.com/css/sf-ui-display" rel="stylesheet">
+	 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0" id="body">
+  <div class="loaderArea">
+   <div class="loader"></div>
+</div>
+	<header class="container">	
+		<img src="images/small_cloud.svg" alt="cloud" class="animated_icon-item1 icona"  data-aos="fade-down" data-aos-offset="-200"
+    data-aos-delay="50"
+    data-aos-duration="1000"
+    data-aos-easing="ease-in-out"
+    data-aos-once="true">
+		<img src="images/big_cloud.svg" alt="big_cloud" class="animated_icon-item2 icona" data-aos="fade-down" data-aos-offset="-200"
+    data-aos-delay="50"
+    data-aos-duration="1000"
+    data-aos-easing="ease-in-out"
+    data-aos-once="true">
+		<img src="images/money.svg" alt="money" class="animated_icon-item3 icona" data-aos="fade-right"data-aos-offset="-200"
+    data-aos-delay="50"
+    data-aos-duration="1000"
+    data-aos-easing="ease-in-out"
+    data-aos-once="true"
+    >
+		<img src="images/big_money.svg" alt="big_money" class="animated_icon-item4 icona" data-aos="fade-right"data-aos-offset="-200"
+    data-aos-delay="50"
+    data-aos-duration="1000"
+    data-aos-easing="ease-in-out"
+    data-aos-once="true">
+		<img src="images/plane.svg" alt="plane" class="animated_icon-item5 icona" data-aos="fade-up-left"
+    data-aos-offset="-200"
+    data-aos-delay="50"
+    data-aos-duration="1000"
+    data-aos-easing="ease-in-out"
+    data-aos-mirror="true"
+    data-aos-once="true"
+   >
+		<div class="header__wrapper " id="header_nav">
+			<div class="header__logo">
+				<img src="images/logo.svg" alt="logo">
+				<p>TookTook</p>
+			</div>
+			<nav>
+				<ul class="nav__list">
+					<li class="nav__list-item">
+						<a href="">О сервисе</a>
+				    </li>
+				    <li class="nav__list-item">
+						<a href="">Гарантии</a>
+				    </li>
+				    <li class="nav__list-item">
+						<a href="">Как это работает</a>
+				    </li>
+				    <li class="nav__list-item">
+						<a href="">Отзывы</a>
+				    </li>
+				</ul>
+			</nav>
+			<div class="header__ask-question">
+				<a href="">Задать вопрос</a>	
+			</div>
+		</div>
+		<h1 class="header__title fadeInTopRight animated tada" >Сервис доставки<br>
+посылок из ОАЭ за вознаграждения</h1>
+		<div class="header__form container-m header__contact-us">
+			
+  	<div class="header__form-wrapper1">
+  		<p>Вы летите в:</p>
+  		<select class="header__contact-city">
+   	 <img src="images/Back_button.svg" alt="Back_button">
+    <option value="kiev" selected>Киев</option>
+    <option value="dnepro" >Днепропетровск</option>
+    <option value="odessa">Одесса</option>
+    <option value="harkiv" >Харьков</option>
+
+   </select> 
+  	</div>
+
+  	<div class="header__form-wrapper2">
+  		<p>Дата вылета:</p>
+  		<div class="" id="input_date">
+  			<p id="input_change"></p>
+  			<img src="images/Today.svg" alt="clanedar" class="icon_calendar">
+  		</div>
+  		<table id="calendar2" class="calendar2">
+ 			 <thead>
+		    <tr><td>‹<td colspan="5"><td>›
+		    <tr><td>Пн<td>Вт<td>Ср<td>Чт<td>Пт<td>Сб<td>Вс
+  		<tbody>
+			</table>
+  	</div>
+  	<div class="header__form-wrapper3">
+  		<p>Ваш телефон:</p>
+  		<div class="form-group">
+  <img src="images/flag.svg" alt="flag">
+  <select id="country" class="form-control">
+  	<img src="images/flag.svg" alt="flag">
+    <option value="ru">+7</option>
+    <option value="ua"selected>+380</option>
+    <option value="by">+375</option>
+  </select>
+  <input id="phone" type="text" class="form-control">
+</div>
+  	</div>
+		</div>
+		<div class="header__contact-us container-m">
+			<p>Выберите как с Вами связаться:</p>
+			<div class="header__contact-buttons" id="header__contact-buttons" >
+				<a class="header__contact-buttons-wrapper btn__wrapper-1">			
+					<p>Позвоните мне</p>
+				</a>
+				<a class="header__contact-buttons-wrapper btn__wrapper-2">				
+ 					<p>Написать в Whatsapp</p>
+				</a>
+				<a class="header__contact-buttons-wrapper btn__wrapper-3">			
+					<p>Написать в Viber</p>
+				</a>
+				<a class="header__contact-buttons-wrapper btn__wrapper-4">				
+					<p>Написать в Telegram</p>
+				</a>
+			</div>
+			<button class=" special__buttons" id="myBtn">Оставить заявку</button>
+		</div>
+	</header>
+	<section class="our__services container-m" >
+		<div class="our__services-wrapper">
+			<p class="services__logo">TookTook</p>
+			<h2 class="services__title">
+				Путешествуй и зарабатывай
+			</h2>
+			<div class="services__subtitle">
+				<div class="services__subtitle-block1">
+					<p>Каждый из нас летает на отдых и по делам, а многие летают в Объединенные Арабские Эмираты
+						<br><br>
+					Всем известно что страна славится своими <b>лучшими ценами на технику Apple</b></p>	
+				</div>
+				<div class="services__subtitle-block2">
+					<p>Зачастую У Вас есть законное право на провоз одной или НЕСКОЛЬКИХ ЕДИНИЦ новой техники таких как телефон, ноутбук, планшет, часы, наушники и т. д. 
+					<br><br>
+					<b>Как правило мы его используем для себя крайне редко.</b></p>
+				</div>
+			</div>
+			<div class="services__details">
+				<div class="services__details-icons">
+					<img src="images/ticket.svg" alt="ticket" class="services__details-icon1" data-aos="fade-right"
+    data-aos-offset="300"
+    data-aos-delay="50"
+    data-aos-duration="1000"
+    data-aos-easing="linear"
+    data-aos-mirror="false"
+    data-aos-once="true">
+					<img src="images/phone.svg" alt="phone" class="services__details-icon2" data-aos="fade-right"
+    data-aos-offset="300"
+    data-aos-delay="50"
+    data-aos-duration="1000"
+    data-aos-easing="linear"
+    data-aos-mirror="false"
+    data-aos-once="true"
+    >
+					<img src="images/airpods1.svg" alt="airpods1" class="services__details-icon3"  data-aos="fade-right"
+    data-aos-offset="300"
+    data-aos-delay="100"
+    data-aos-duration="1000"
+    data-aos-easing="ease-in-out"
+    data-aos-mirror="true"
+    data-aos-once="true"
+    >
+					<img src="images/airpods2.svg" alt="airpods2" class="services__details-icon4 " data-aos="fade-right"
+    data-aos-offset="300"
+    data-aos-delay="100"
+    data-aos-duration="1000"
+    data-aos-easing="ease-in-out"
+    data-aos-mirror="false"
+    data-aos-once="true">
+				</div>
+				<div class="services__details-description">
+					<h3>Что предлагает наш сервис</h3>
+					<p>Мы предлагаем вам получить денежное вознаграждение за то что кто-то получит свой долгожданный гаджет дешевле. </p>
+					<a href="" class="special__buttons">Хочу заработать</a>
+				</div>
+			</div>
+		</div>	  
+		<div class="warranty" style="">
+			<h2 data-aos="fade-up"data-aos-offset="200"
+    data-aos-delay="0"
+    data-aos-duration="500"
+    data-aos-easing="ease-in-out"
+    data-aos-mirror="false"
+    data-aos-once="true">Наш сервис гарантирует что...</h2>
+			<div class="warranty__wrapper"> 
+				<div class="warranty__list" data-aos="fade-up"data-aos-offset="200"
+    data-aos-delay="0"
+    data-aos-duration="500"
+    data-aos-easing="ease-in-out"
+    data-aos-mirror="false"
+    data-aos-once="true">
+				<ul>
+					<li><img src="images/chec_icon.svg" alt="chec_icon">это абсолютно безопасно и законно</li>
+					<li><img src="images/chec_icon.svg" alt="chec_icon">это приносит Радость каждому</li>
+					<li><img src="images/chec_icon.svg" alt="chec_icon">за маленькую услугу Вы <b>получаете $100</b></li>
+					<li><img src="images/chec_icon.svg" alt="chec_icon"><b>что все упаковки с гаджетами могут быть вскрыты при вас и повторно упакованы</b></li>
+			  </ul>
+				</div>
+				<div class="warranty__description"><p data-aos="fade-up"data-aos-offset="200"
+    data-aos-delay="0"
+    data-aos-duration="500"
+    data-aos-easing="ease-in-out"
+    data-aos-mirror="false"
+    data-aos-once="true">Все гаджеты и аксессуары сертифицированны, находятся в оригинальной упаковке, и безопасны для транспортировки</p></div>
+		</div>
+			<a href="" class="special__buttons" >Получить $100</a>
+		</div>
+	</section>
+  <section class="how__it-works container-m">
+    <h2>Как это работает</h2>
+      <div class="" id="paralax">   
+      </div>
+      <div class="" id="paralax2">      
+      </div>
+    <div class="how__it-works-wrapper check__icon" id="target">
+      <p>Вы решили <b>получить 100$</b> от нашего проекта, а может и больше</p>
+    </div>
+    <div class="how__it-works-wrapper check__icon" id="target2">
+      <p>Вы знаете что у вас вылет из Дубая в определенный день в определенное время</p>
+    </div>
+    <div class="how__it-works-wrapper check__icon" id="target3">
+      <p id="box1">Вы оставляете заявку у нас на сайте </p>
+    </div>
+      <div class="" id="paralax3">    
+      </div>
+      <div class="" id="paralax4">
+      </div>
+    <div class="how__it-works-wrapper check__icon" id="target4">
+      <p>С вами связывается наш оператор и уточняет детали</p>
+    </div>
+    <div class="how__it-works-wrapper check__icon" id="target5">
+      <p>Перед вылетом наш курьер передает Вам набор техники (Например Айфон часы и наушники)</p>
+    </div>
+    <div class="how__it-works-wrapper check__icon" id="target6">
+      <p>Далее по прилёту наш менеджер заберёт гаджет и Вы получаете <b>вознаграждение $100</b></p>
+    </div>
+    <div class="how__it-works-wrapper check__icon" id="target7">
+      <p>После этого сразу два человека станут счастливее ВЫ и тот для кого вы привезли посылку</p>
+    </div>
+    <a  class="special__buttons" >Стать счастливым!</a>
+  </section>
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <h3>Спасибо!</h3>
+    <p>Форма успешно отправлена. 
+    С Вами в ближайшее время свяжется менеджер для обработки заявки.</p>
+    <a  class="special__buttons close" >Понятно</a>
+  </div>
+
+</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.js" type="text/javascript"></script>
+<script src="js/script.js" type="text/javascript"></script>
+  <script>
+ AOS.init({
+  disable: function() {
+    var maxWidth =800; 
+    return window.innerWidth < maxWidth;
+  }
+});
+ var paralax = document.getElementById("paralax");
+
+/* коэфициент сдвига: 1 сдвиг равный смещению по оси Y, 0 без сдвига */
+var moveCoef = 0.1;
+
+window.addEventListener("scroll", scroll);
+window.addEventListener("resize", scroll);
+scroll();
+
+function scroll() {
+  /* берём огнаничивающий прямоугольник паралакса относительно окна (фрейма) */
+  var r = paralax.getBoundingClientRect();
+
+  /* центр паралакса */
+  var paralaxYCenter = r.y + r.height / 2;
+  /* центр экрана */
+  var scrollYCenter = window.innerHeight / 2;
+
+  /* Вычисляем смещение */
+  var move = (paralaxYCenter - scrollYCenter) * moveCoef + 1;
+
+  paralax.style.top =   move + "px";
+}
+
+</script>
+<script>
+ var paralax3 = document.getElementById("paralax3");
+
+/* коэфициент сдвига: 1 сдвиг равный смещению по оси Y, 0 без сдвига */
+var moveCoef = 0.1;
+
+window.addEventListener("scroll", scroll);
+window.addEventListener("resize", scroll);
+scroll();
+
+function scroll() {
+  /* берём огнаничивающий прямоугольник паралакса относительно окна (фрейма) */
+  var r = paralax3.getBoundingClientRect();
+
+  /* центр паралакса */
+  var paralax3YCenter = r.y + r.height / 2;
+  /* центр экрана */
+  var scrollYCenter = window.innerHeight / 2;
+
+  /* Вычисляем смещение */
+  var move = (paralax3YCenter - scrollYCenter) * moveCoef + 1;
+
+  paralax3.style.top =   move + "px";
+};
+var modal = document.getElementById("myModal");
+
+// Получить кнопку, которая открывает модальный
+var btn = document.getElementById("myBtn");
+
+// Получить элемент <span>, который закрывает модальный
+var span = document.getElementsByClassName("close")[0];
+
+// Когда пользователь нажимает на кнопку, откройте модальный
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// Когда пользователь нажимает на <span> (x), закройте модальное окно
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// Когда пользователь щелкает в любом месте за пределами модального, закройте его
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+</script>
+<script>
+ $(window).on('load', function () {
+    $preloader = $('.loaderArea'),
+      $loader = $preloader.find('.loader');
+    $loader.fadeOut();
+    $preloader.delay(350).fadeOut('slow');
+  });
+</script>
+</body>
+</html>	
