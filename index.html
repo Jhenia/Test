@@ -349,7 +349,9 @@ $(document).on('click', '.nav__list a[href^="#"]', function (event) {
     $preloader = $('.loaderArea'),
       $loader = $preloader.find('.loader');
     $loader.fadeOut();
-   
+    $preloader.delay(1500).animate({
+                width: "toggle"
+            });
   });
 </script>
 </body>
