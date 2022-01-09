@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -306,23 +306,7 @@ function scroll() {
 
 </script>
 <script>
-  $(document).on('click', '.nav__list a[href^="#"]', function (event) {
-    event.preventDefault();
- 
-    $('html, body').animate({
-        scrollTop: $($.attr(this, 'href')).offset().top-100
-    }, 1000);
-});
- $(window).on('load', function () {
-    $preloader = $('.loaderArea'),
-      $loader = $preloader.find('.loader2');
-    $loader.fadeOut();
-    $preloader.delay(2000).animate({
-                width: "toggle"
-            })
-   
-  });
-  var paralax3 = document.getElementById("paralax3");
+ var paralax3 = document.getElementById("paralax3");
 
 /* коэфициент сдвига: 1 сдвиг равный смещению по оси Y, 0 без сдвига */
 var moveCoef = 0.1;
@@ -356,7 +340,26 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
-</script>
 
+</script>
+<script>
+
+$(document).on('click', '.nav__list a[href^="#"]', function (event) {
+    event.preventDefault();
+ 
+    $('html, body').animate({
+        scrollTop: $($.attr(this, 'href')).offset().top-100
+    }, 1000);
+});
+ $(window).on('load', function () {
+    $preloader = $('.loaderArea'),
+      $loader = $preloader.find('.loader2');
+    $loader.fadeOut();
+    $preloader.delay(2000).animate({
+                width: "toggle"
+            })
+   
+  });
+</script>
 </body>
 </html> 
