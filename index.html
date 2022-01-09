@@ -51,12 +51,19 @@
     data-aos-once="true"
    >
     <div class="header__wrapper " id="header_nav">
+      <div class="header__body">
+         <div class="header__burger">
+        <span></span>
+      </div>
       <div class="header__logo">
         <img src="images/logo.svg" alt="logo">
         <p>TookTook</p>
       </div>
-      <nav>
+      <div class="nav">
+        <nav class="">
+
         <ul class="nav__list">
+          <li class="hidden-l ">Меню</li>
           <li class="nav__list-item">
             <a href="#service">О сервисе</a>
             </li>
@@ -66,14 +73,18 @@
             <li class="nav__list-item">
             <a href="#work">Как это работает</a>
             </li>
-            <li class="nav__list-item">
-            <a >Отзывы</a>
+            <li class="nav__list-item hidden">
+            <a href="#">Отзывы</a>
             </li>
         </ul>
       </nav>
       <div class="header__ask-question">
         <a href="">Задать вопрос</a>  
       </div>
+      </div>
+      
+      </div>
+     
     </div>
     <h1 class="header__title fadeInTopRight animated tada" >Сервис доставки<br>
 посылок из ОАЭ за вознаграждения</h1>
@@ -360,6 +371,12 @@ $(document).on('click', '.nav__list a[href^="#"]', function (event) {
             })
    
   });
+ $(document).ready(function(){
+  $('.header__burger').click(function(event){
+    $('.header__burger,.nav').toggleClass('active');
+    $('body').toggleClass('lock');
+  });
+ });
 </script>
 </body>
 </html> 
