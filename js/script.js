@@ -215,4 +215,54 @@ window.addEventListener('scroll', function() {
 // А также запустим функцию сразу. А то вдруг, элемент изначально видно
 Visible (element);
 
+$(document).on('click', '.nav__list a[href^="#"]', function (event) {
+    event.preventDefault();
+ 
+    $('html, body').animate({
+        scrollTop: $($.attr(this, 'href')).offset().top-100
+    }, 1000);
+});
+ $(window).on('load', function () {
+    $preloader = $('.loaderArea'),
+      $loader = $preloader.find('.loader2');
+    $loader.fadeOut();
+    $preloader.delay(2000).animate({
+                width: "toggle"
+            })
+   
+  });
+  var paralax3 = document.getElementById("paralax3");
+
+/* коэфициент сдвига: 1 сдвиг равный смещению по оси Y, 0 без сдвига */
+var moveCoef = 0.1;
+
+window.addEventListener("scroll", scroll);
+window.addEventListener("resize", scroll);
+scroll();
+
+function scroll() {
+  var r = paralax3.getBoundingClientRect();
+  var paralax3YCenter = r.y + r.height / 2;
+  var scrollYCenter = window.innerHeight / 2;
+  var move = (paralax3YCenter - scrollYCenter) * moveCoef + 1;
+  paralax3.style.top =   move + "px";
+};
+var modal = document.getElementById("myModal");
+var btn = document.getElementById("myBtn");
+
+var span = document.getElementsByClassName("close")[0];
+
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
 
