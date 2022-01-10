@@ -712,7 +712,7 @@ input#phone {
     top: 0;
     width: 100%;
     padding: 8px 30px !important;
-    margin-left: 0px !important;
+    margin-left: -40px !important;
 }
 
 section.how__it-works h2 {
