@@ -1128,6 +1128,9 @@ div#paralax4 {
     padding: 0 30px;
     width: 90%;
     }
+    .header__contact-us p{
+        font-size: 15px;
+    }
 }
 
 .hidden-m{
