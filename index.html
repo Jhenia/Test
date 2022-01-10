@@ -59,6 +59,7 @@
         <img src="images/logo.svg" alt="logo">
         <p>TookTook</p>
       </div>
+      <a class=" special__buttons hidden-m special__buttons-s" id="myBtn">Оставить заявку</a>
       <div class="nav">
         <nav class="">
 
@@ -86,8 +87,8 @@
       </div>
      
     </div>
-    <h1 class="header__title fadeInTopRight animated tada" >Сервис доставки<br>
-посылок из ОАЭ за вознаграждения</h1>
+    <h1 class="header__title fadeInTopRight animated tada" >Сервис доставки<span class="hidden"><br></span>
+посылок <span>из</span> ОАЭ <span>за</span> вознаграждения</h1>
     <div class="header__form container-m header__contact-us">
       
     <div class="header__form-wrapper1">
@@ -125,6 +126,7 @@
     <option value="ua"selected>+380</option>
     <option value="by">+375</option>
   </select>
+  <img src="images/back_btn_mob.svg" alt="back_btn_mob" class="back__btn">
   <input id="phone" type="text" class="form-control">
 </div>
     </div>
@@ -145,7 +147,7 @@
           <p>Написать в Telegram</p>
         </a>
       </div>
-      <button class=" special__buttons" id="myBtn">Оставить заявку</button>
+      <button class=" special__buttons" id="myBtn2">Оставить заявку</button>
     </div>
   </header>
   <section class="our__services container-m" id="service">
@@ -352,6 +354,7 @@ window.onclick = function(event) {
   }
 }
 
+
 </script>
 <script>
 
@@ -378,5 +381,24 @@ $(document).on('click', '.nav__list a[href^="#"]', function (event) {
   });
  });
 </script>
+<script>  
+var modal2 = document.getElementById("myModal");
+var btn2 = document.getElementById("myBtn2");
+
+var span2 = document.getElementsByClassName("close")[0];
+
+btn2.onclick = function() {
+  modal2.style.display = "block";
+}
+
+span2.onclick = function() {
+  modal2.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == modal2) {
+    modal2.style.display = "none";
+  }
+}</script>
 </body>
 </html> 
