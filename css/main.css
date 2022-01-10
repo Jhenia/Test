@@ -990,9 +990,10 @@ body.shadow::before{
         line-height: 40px;
     }
     .warranty__description p{
-        font-size: 20px;
-        line-height: 30px;
+        font-size: 18px;
+        line-height: 26px;
         margin-top: 51px;
+        text-align: center;
     }
     .warranty__list ul li{
         font-size: 14px;
