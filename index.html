@@ -67,16 +67,16 @@
         <ul class="nav__list">
           <li class="hidden-l ">Меню</li>
           <li class="nav__list-item">
-            <a href="#service">О сервисе</a>
+            <a href="#service" class="close__menu">О сервисе</a>
             </li>
             <li class="nav__list-item">
-            <a href="#garant">Гарантии</a>
+            <a href="#garant" class="close__menu">Гарантии</a>
             </li>
             <li class="nav__list-item">
-            <a href="#work">Как это работает</a>
+            <a href="#work" class="close__menu"> Как это работает</a>
             </li>
             <li class="nav__list-item hidden">
-            <a href="#">Отзывы</a>
+            <a href="#" class="close__menu">Отзывы</a>
             </li>
         </ul>
       </nav>
@@ -399,6 +399,11 @@ $(document).on('click', '.nav__list a[href^="#"]', function (event) {
   $('.header__burger').click(function(event){
     $('.header__burger,.nav,.header__wrapper').toggleClass('active');
     $('body').toggleClass('lock');
+  });
+ }); $(document).ready(function(){
+  $('.close__menu').click(function(event){
+    $('.header__burger,.nav,.header__wrapper').removeClass('active');
+  
   });
  });
 </script>
