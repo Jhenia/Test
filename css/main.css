@@ -996,7 +996,14 @@ div#paralax4 {
 body.shadow::before{
     opacity: 0;
 }
+.hidden-active{
+    display: none;
+}
 @media(max-width: 767px){
+    .header__wrapper.active .hidden-inactive  {
+        display: none !important;
+    }
+    
     .how__it-works-wrapper p{
         font-size: 14px;
     }
@@ -1052,6 +1059,7 @@ body.shadow::before{
         margin: 0 auto;
     }
     .header__ask-question a{
+        margin-bottom: 28px !important;
         margin: 0 auto;
         border: none;
         display: block;
@@ -1207,9 +1215,7 @@ body.shadow::before{
     body.lock{
         overflow: hidden !important;
     }
-    .special__buttons-s{
-
-    }
+    .special__buttons-s{display: none !IMPORTANT;}
     .special__buttons-s{
         display: block !important;
         z-index: 86;
@@ -1275,6 +1281,16 @@ body.shadow::before{
     .header__contact-us p{
         font-size: 15px;
     }
+    .hidden-active{
+        display: block;
+        max-width: 315px !important;
+        width: 100% !important;
+        margin: 0 auto;
+        padding: 20px 0px !IMPORTANT;
+        font-size: 20px;
+        line-height: 24px;
+    }
+    
 }
 
 .hidden-m{

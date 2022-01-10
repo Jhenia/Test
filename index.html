@@ -60,7 +60,7 @@
         <img src="images/logo.svg" alt="logo">
         <p>TookTook</p>
       </div>
-      <a class=" special__buttons hidden-m special__buttons-s" id="myBtn">Оставить заявку</a>
+      <a class=" special__buttons hidden-m special__buttons-s hidden-inactive" id="myBtn">Оставить заявку</a>
       <div class="nav">
         <nav class="">
 
@@ -83,6 +83,8 @@
       <div class="header__ask-question">
         <a href="">Задать вопрос</a>  
       </div>
+      <span class="header__line"></span>
+     <a class=" special__buttons hidden-active special__buttons-s" id="myBtn3">Оставить заявку</a>
       </div>
       
       </div>
@@ -377,7 +379,7 @@ $(document).on('click', '.nav__list a[href^="#"]', function (event) {
   });
  $(document).ready(function(){
   $('.header__burger').click(function(event){
-    $('.header__burger,.nav').toggleClass('active');
+    $('.header__burger,.nav,.header__wrapper').toggleClass('active');
     $('body').toggleClass('lock');
   });
  });
@@ -399,6 +401,26 @@ span2.onclick = function() {
 window.onclick = function(event) {
   if (event.target == modal2) {
     modal2.style.display = "none";
+  }
+}
+</script>
+<script>
+  var modal3 = document.getElementById("myModal");
+var btn3 = document.getElementById("myBtn3");
+
+var span3 = document.getElementsByClassName("close")[0];
+
+btn3.onclick = function() {
+  modal3.style.display = "block";
+}
+
+span3.onclick = function() {
+  modal3.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == modal3) {
+    modal3.style.display = "none";
   }
 }
 </script>
