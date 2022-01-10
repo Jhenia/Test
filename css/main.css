@@ -610,6 +610,28 @@ input#phone {
         margin-top: 0 !important;
     }
 }
+@media only screen and (max-width: 1800px) and (min-width: 1501px)  {
+    img.animated_icon-item5{
+        bottom: 310px;
+        max-width: 476px;
+        right: -241px;
+    }
+    img.animated_icon-item3{bottom: 550px;left: 130px;}
+    img.animated_icon-item4{
+        bottom: 610px;
+        left: 200px;
+    }
+    img.animated_icon-item1{
+        bottom: 830px;
+        left: 550px;
+    }
+    img.animated_icon-item2{
+        bottom: 820px;
+        left: 460px;
+    }
+
+    img.header__bg{max-width: 1277px;}
+}
 @media  screen and (min-width: 1301px)and  (max-width: 1500px){
     img.header__bg{
         top: 6% !important;
