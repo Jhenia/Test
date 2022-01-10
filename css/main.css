@@ -1251,7 +1251,7 @@ body.shadow::before{
     line-height: 36px;
     text-transform: uppercase;
     max-width: 330px;
-    /* min-width: 320px; */
+    min-width: 320px;
     margin-bottom: -7px;
     text-align: inherit;
     } 
