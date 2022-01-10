@@ -1015,6 +1015,7 @@ div#paralax4 {
     }
     header{
         padding-top: 70px !IMPORTANT;
+        margin-top: 70px;
         padding: 0px 30px !important;
         background-image: url(..//images/header_mob_bg.png);
     }
@@ -1032,6 +1033,7 @@ div#paralax4 {
         z-index: 28;
         position: fixed;
         width: 100%;
+        top: 0;
         box-sizing: border-box;
         padding: 0px 30px 0px 30px;
         margin-left: -30px;
@@ -1097,11 +1099,11 @@ div#paralax4 {
         padding: 0;
     }
     h1.header__title{
-    margin-top: 100px !important;
-    font-size: 20px;
+    margin-top: 30px !important;
+    font-size: 22px;
     line-height: 36px;
     text-transform: uppercase;
-    max-width: 300px;
+    max-width: 330px;
     margin-bottom: -7px;
     text-align: inherit;
     } 
