@@ -142,7 +142,7 @@ var Visible = function (target) {
     },
     // Получаем позиции окна
     windowPosition = {
-      top: window.pageYOffset-650,
+      top: window.pageYOffset-740,
       left: window.pageXOffset,
       right: window.pageXOffset + document.documentElement.clientWidth,
       bottom: window.pageYOffset + document.documentElement.clientHeight

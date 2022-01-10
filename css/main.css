@@ -714,6 +714,8 @@ section.how__it-works h2 {
     align-items: center;
     /* height: 300px; */
     margin-bottom: 43px;
+    position: relative;
+    z-index: 20;
 }
 
 p.check__icon {
@@ -738,7 +740,7 @@ div#paralax {
     height: 112px;
     margin-top: 200px;
     position: absolute;
-    z-index: 2;
+    z-index: 1;
     left: -30px;
     background-position: center;
     background-repeat: no-repeat;
@@ -746,7 +748,8 @@ div#paralax {
 
 section.how__it-works {
     position: relative;
-    height: 2451px;
+    height: 1811px;
+    z-index: 90;
 }
 
 div#paralax2 {
@@ -758,6 +761,7 @@ div#paralax2 {
     margin-top: 50px;
     position: absolute;
     background-position: center;
+    z-index: 0;
     background-repeat: no-repeat;
 }
 
@@ -967,7 +971,50 @@ div#paralax4 {
 .header__burger{
     display: none;
 }
+body.shadow::before{
+    opacity: 0;
+}
 @media(max-width: 767px){
+    .how__it-works-wrapper p{
+        font-size: 14px;
+    }
+    section.how__it-works h2{
+        font-size: 30px;
+    }
+    .warranty{
+        margin-bottom: 180px;
+    }
+
+    .warranty h2{
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .warranty__description p{
+        font-size: 20px;
+        line-height: 30px;
+        margin-top: 51px;
+    }
+    .warranty__list ul li{
+        font-size: 14px;
+        flex-wrap: `;
+        line-height: 20px;
+    }
+    .services__details{
+        background: radial-gradient(100% 142.86% at 0% 46.79%, #F1FDFE 0%, #d6f9ff 11.79%, #EBFAFE 41.79%, #D6F1FA 71.41%, #C3EAF7 100%);
+        border-radius: 12px;
+        padding: 20px 20px;
+        margin-bottom: 100px;
+        height: auto;
+    }
+    .services__details-description{
+        /* max-width: inherit !important; */
+        width: 100%;
+        padding-top: 0px;
+    }
+    .services__subtitle{
+        display: block;
+        margin-bottom: 110px;
+    }
     .our__services-wrapper{
         margin-top: -120px;
     }
@@ -1077,7 +1124,7 @@ div#paralax4 {
         left: 0px;
         width: 100vw;
         height: 100%;
-        z-index: 43;
+        z-index: 86;
         background: #FFFFFF;
         box-shadow: 5px 5px 15px rgba(142, 192, 207, 0.11);
     }
@@ -1098,7 +1145,6 @@ div#paralax4 {
     }
     .header__wrapper{
         height: 70px;
-        z-index: 28;
         position: fixed;
         width: 100%;
         top: 0;
@@ -1189,12 +1235,13 @@ div#paralax4 {
         padding: 20px 50px;
         width: 100%;
         margin-top: 30px;
+        /* font-size: 20px; */
     }
     select#country{
         min-width: 71px;
     }
     .modal-content{
-    margin: 35% auto;
+    margin: 50% auto;
     padding: 0 30px;
     width: 90%;
     }
