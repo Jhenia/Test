@@ -1015,7 +1015,7 @@ div#paralax4 {
     }
     header{
         padding-top: 70px !IMPORTANT;
-        margin-top: 70px;
+        margin-top: 70px !important;
         padding: 0px 30px !important;
         background-image: url(..//images/header_mob_bg.png);
     }
