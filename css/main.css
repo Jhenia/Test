@@ -103,7 +103,7 @@ h1.header__title {
     font-weight: 300;
     animation-delay: 2s;
     margin-bottom: 70px;
-    z-index: 30;
+    z-index: 29;
     position: relative;
 }
 
@@ -1104,12 +1104,13 @@ body.shadow::before{
         background: #FFFFFF;
         flex-direction: column;
         max-width: 100%;
-        z-index: 33;
+        z-index: -37;
         top: -100%;
         transition: all 0.3s ease 0s;
     }
     .nav.active{
         top: 0;
+        /* position: relative; */
     }
     .header__body{
         display: flex;
@@ -1157,6 +1158,8 @@ body.shadow::before{
         max-height: 270px;
         padding-top: 70px;
         margin: 0 auto;
+        position: relative;
+        z-index: 100;
     }
     .warranty__wrapper{
         display: block;
@@ -1214,10 +1217,11 @@ body.shadow::before{
     }
     h1.header__title{
     margin-top: 30px !important;
-    font-size: 22px;
+    font-size: 21px;
     line-height: 36px;
     text-transform: uppercase;
     max-width: 330px;
+    min-width: 320px;
     margin-bottom: -7px;
     text-align: inherit;
     } 
