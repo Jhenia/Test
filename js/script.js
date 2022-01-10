@@ -33,14 +33,24 @@ window.addEventListener('scroll', function () {
         add_class.classList.remove("fixed");
     }
 });
+var change2 = document.getElementById('body');
+window.addEventListener('scroll', function () {
+  if (window.scrollY > 600) {
+        change.classList.add("shadow1");
+    } else {
+        change.classList.remove("shadow1");
+    }
+});
 var change = document.getElementById('body');
 window.addEventListener('scroll', function () {
   if (window.scrollY > 2000) {
         change.classList.add("shadow");
+        change2.classList.remove("shadow1");
     } else {
         change.classList.remove("shadow");
     }
 });
+
 function Calendar2(id, year, month) {
 var Dlast = new Date(year,month+1,0).getDate(),
     D = new Date(year,month,Dlast),
