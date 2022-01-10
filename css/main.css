@@ -562,6 +562,7 @@ select#country {
     cursor: pointer;
     background: #fff;
     -webkit-appearance: none;
+    z-index: 5;
 }
 
 .form-group {
@@ -1013,7 +1014,7 @@ div#paralax4 {
         box-shadow: 5px 5px 15px rgba(142, 192, 207, 0.11);
     }
     header{
-        padding-top: 0;
+        padding-top: 70px !IMPORTANT;
         padding: 0px 30px !important;
         background-image: url(..//images/header_mob_bg.png);
     }
@@ -1097,13 +1098,13 @@ div#paralax4 {
     }
     h1.header__title{
     margin-top: 100px !important;
-    font-size: 22px;
+    font-size: 20px;
     line-height: 36px;
     text-transform: uppercase;
-    max-width: 330px;
+    max-width: 300px;
     margin-bottom: -7px;
     text-align: inherit;
-        } 
+    } 
     .header__contact-buttons-wrapper{
         min-width: 258px;
         padding: 18px 0px;
@@ -1159,4 +1160,5 @@ select#country::after {content: '';background: url(..//images/plane.svg);padding
     position: absolute;
     left: 110px;
     top: 26px;
+    z-index: 5;
 }
