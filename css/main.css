@@ -1021,11 +1021,14 @@ body.shadow::before{
         line-height: 26px;
         margin-top: 51px;
         text-align: center;
+        margin-left: auto;
+        margin-right: auto;
     }
     .warranty__list ul li{
         font-size: 14px;
         flex-wrap: `;
         line-height: 20px;
+        justify-content: flex-start;
     }
     .services__details{
         background: radial-gradient(100% 142.86% at 0% 46.79%, #F1FDFE 0%, #d6f9ff 11.79%, #EBFAFE 41.79%, #D6F1FA 71.41%, #C3EAF7 100%);
@@ -1254,7 +1257,7 @@ body.shadow::before{
     max-width: 330px;
     min-width: 320px;
     margin-bottom: -7px;
-    text-align: inherit;
+    /* text-align: inherit; */
     } 
     .header__contact-buttons-wrapper{
         min-width: 258px;
@@ -1356,7 +1359,7 @@ body.shadow::before{
     display: none;
 }
 .hidden{
-    display: contents;
+    /* display: contents; */
 }
 .header__body {
     display: flex;
@@ -1397,8 +1400,7 @@ img.header__bg {
 }
 
 body#body.shadow1::before {
-    transition: 1s;
-    content: '';
+    content: "";
     width: 100%;
     height: 100%;
     opacity: 0 !important;
@@ -1427,4 +1429,121 @@ body::before {
 }
 #myBtn3{
     display: none;
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px)  {
+
+.header__ask-question a {
+    padding: 3px 20px;
+    min-width: 155px;
+}
+
+ul.nav__list li a {
+    font-size: 12px;
+}
+
+.header__wrapper {
+    padding: 0 20px;
+}
+
+ul.nav__list {
+    margin-left: 30px;
+}
+
+.header__logo p {
+    font-size: 19px;
+}
+
+.header__form-wrapper3 {
+}
+
+.header__contact-buttons {
+    flex-wrap: wrap;
+}
+
+.header__contact-buttons-wrapper {
+    margin: 10px 10px;
+    max-width: 304px;
+}
+
+img.animated_icon-item5 {
+    display: none;
+}
+
+select#country {margin-left: 0px;font-size: 15px;}
+
+h1.header__title {
+    margin-top: 100px !important;
+}
+
+.form-group {
+    max-width: 210px;
+    padding: 20.8px 9px;
+}
+
+.form-group img {
+    display: none;
+}
+
+p#input_change {
+    font-size: 15px;
+}
+
+select.header__contact-city {
+    font-size: 15px;
+}
+
+input#phone {
+    font-size: 13px;
+}
+
+img.animated_icon-item4 {
+    display: none;
+}
+
+img.animated_icon-item3 {
+    display: none;
+}
+
+.icona {
+    display: none;
+}
+
+.services__details-icons img {
+    display: none;
+}
+
+.services__subtitle {
+    margin-bottom: 200px;
+}
+
+.warranty__description p {
+    font-size: 24px;
+    max-width: 360px;
+    line-height: 36px;
+}
+
+.services__details-description {
+    margin: 0 auto;
+}
+}
+@media only screen and (min-width: 1025px) and (max-width: 1300px)  {
+
+img.services__details-icon2 {
+    top: -50px;
+    left: 10px;
+}
+
+img.services__details-icon4 {
+    left: 320px;
+}
+
+img.services__details-icon3 {
+    left: 235px;
+}
+
+.our__services-wrapper {
+    margin-top: 0px;
+}
+
+.form-group {
 }
