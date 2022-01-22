@@ -998,6 +998,9 @@ body.shadow::before{
     display: none !important;
 }
 @media(max-width: 767px){
+    .header__form-wrapper1,div#input_date{
+        max-width: inherit;
+    }
     .form-group{
         max-width: inherit;
     }
