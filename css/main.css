@@ -998,6 +998,16 @@ body.shadow::before{
     display: none !important;
 }
 @media(max-width: 767px){
+    .form-group{
+        max-width: inherit;
+    }
+    nav{
+        max-width: inherit;
+    }
+    .services__details-description a{
+        margin-left: auto;
+        margin-right: auto;
+    }
     .header__wrapper.active .hidden-inactive  {
         display: none !important;
     }
@@ -1036,11 +1046,13 @@ body.shadow::before{
         padding: 20px 20px;
         margin-bottom: 100px;
         height: auto;
+        text-align: center;
     }
     .services__details-description{
         /* max-width: inherit !important; */
         width: 100%;
         padding-top: 0px;
+        margin: 0 auto;
     }
     .services__subtitle{
         display: block;
@@ -1051,6 +1063,7 @@ body.shadow::before{
     }
     .header__form-wrapper3,.header__form-wrapper2{
         margin-left: 0;
+        max-width: inherit;
     }
     ul.nav__list li a{
         font-size: 18px;
@@ -1284,7 +1297,7 @@ body.shadow::before{
     }
     
     .modal-content{
-    margin: 50% auto;
+    margin: 30% auto;
     padding: 0 30px;
     width: 90%;
     }
@@ -1405,8 +1418,7 @@ body#body.shadow1::before {
     height: 100%;
     opacity: 0 !important;
     position: absolute;
-    transition: all 0.5s ease-out;
-    z-index: 2;
+    transition: all 0.3s ease-out;
 }
 
 body::before {
@@ -1417,7 +1429,7 @@ body::before {
     position: absolute;
     transition: all 0.5s ease-out;
     /* z-index: 2; */
-    opacity: 1;
+    /* opacity: 1; */
 }
 @media(max-width: 767px){
    
@@ -1430,7 +1442,11 @@ body::before {
 #myBtn3{
     display: none;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px)  {
+@media only screen and (min-width: 768px) and (max-width: 1023px)  {
+    img.back__btn{
+        display: block !important;
+        left: 52px !important;
+    }
 
 .header__ask-question a {
     padding: 3px 20px;
@@ -1493,7 +1509,8 @@ select.header__contact-city {
 }
 
 input#phone {
-    font-size: 13px;
+    font-size: 12px;
+    margin-left: 30px;
 }
 
 img.animated_icon-item4 {
@@ -1518,7 +1535,7 @@ img.animated_icon-item3 {
 
 .warranty__description p {
     font-size: 24px;
-    max-width: 360px;
+    max-width: 340px;
     line-height: 36px;
 }
 
