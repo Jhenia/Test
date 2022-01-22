@@ -403,7 +403,7 @@ $(document).on('click', '.nav__list a[href^="#"]', function (event) {
  }); $(document).ready(function(){
   $('.close__menu').click(function(event){
     $('.header__burger,.nav,.header__wrapper').removeClass('active');
-  
+    $('body').toggleClass('lock');
   });
  });
 </script>
