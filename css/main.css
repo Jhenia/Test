@@ -1543,7 +1543,7 @@ img.animated_icon-item3 {
     margin: 0 auto;
 }
 }
-@media only screen and (min-width: 1025px) and (max-width: 1300px)  {
+@media only screen and (min-width: 1024px) and (max-width: 1300px)  {
 
 img.services__details-icon2 {
     top: -50px;
